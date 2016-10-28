@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zmm.activity.popup.PopupActivity">
+
+    <ImageView
+        android:id="@+id/pop_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:alpha="0.2"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pop_both"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="看全部"
+            android:textColor="#23D4C4"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#F1F1F1" />
+
+        <TextView
+            android:id="@+id/pop_girl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="只看女"
+            android:textColor="#D06293"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#F1F1F1" />
+
+        <TextView
+            android:id="@+id/pop_boy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="只看男"
+            android:textColor="#6390EB"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F1F1F1" />
+
+        <TextView
+            android:id="@+id/pop_exit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

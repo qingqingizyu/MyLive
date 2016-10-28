@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/child_item_user_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity=""
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#efebeb" />
+    <LinearLayout
+        android:id="@+id/child_item_user_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/child_item_user_sdv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            fresco:placeholderImage="@mipmap/default_head"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/child_item_user_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/child_item_user_gender"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/child_item_user_nick"
+                android:paddingLeft="4dp"
+                android:paddingTop="2dp"
+                android:src="@mipmap/global_icon_female" />
+
+            <ImageView
+                android:id="@+id/child_item_user_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:layout_toRightOf="@+id/child_item_user_gender"
+                android:paddingLeft="4dp"
+                android:src="@mipmap/rank_1" />
+
+            <TextView
+                android:id="@+id/child_item_user_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child_item_user_nick"
+                android:paddingTop="4dp"
+                android:text="描述" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

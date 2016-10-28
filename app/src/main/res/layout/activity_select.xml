@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    android:orientation="vertical"
+    tools:context="com.zmm.activity.popup.select.SelectActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/select_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00D8C9"
+        app:navigationIcon="@drawable/chat_back">
+        <!--标题并且居中-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+    <!--账号与安全，黑名单，开播提醒，未关注人私信，清除缓存，帮助的反馈，关于我们，网络诊断-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/select_textView_one"
+        style="@style/select_textView_style"
+        android:text="账号与安全" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/select_textView_two"
+        style="@style/select_textView_style"
+        android:text="黑名单" />
+
+    <TextView
+        android:id="@+id/select_textView_three"
+        style="@style/select_textView_style"
+        android:text="开播提醒" />
+
+    <TextView
+        android:id="@+id/select_textView_four"
+        style="@style/select_textView_style"
+        android:text="未关注人私信" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/select_textView_five"
+        style="@style/select_textView_style"
+        android:text="清除缓存" />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/select_textView_six"
+        style="@style/select_textView_style"
+        android:text="帮助的反馈" />
+
+    <TextView
+        android:id="@+id/select_textView_seven"
+        style="@style/select_textView_style"
+        android:text="关于我们" />
+
+    <TextView
+        android:id="@+id/select_textView_eight"
+        style="@style/select_textView_style"
+        android:text="网络诊断" />
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/select_btn"
+            android:layout_width="280dp"
+            android:layout_height="54dp"
+            android:background="@drawable/me_button"
+            android:layout_gravity="center"
+            android:text="退出登录"
+            android:textColor="#00D8C9"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Version1.0.0" />
+    </LinearLayout>
+
+</LinearLayout>

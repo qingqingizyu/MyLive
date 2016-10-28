@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.zmm.activity.more.MoreActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/more_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@mipmap/global_tittle_bg"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/chat_back">
+
+        <TextView
+            android:id="@+id/more_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="标题"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

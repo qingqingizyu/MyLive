@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+     <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppLiveTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="MediaController_Text">
+        <item name="android:textColor">#bfbfbf</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/nemediacontroller_progressbar</item>
+        <item name="android:indeterminateDrawable">@drawable/nemediacontroller_progressbar</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:thumb">@drawable/nemediacontroller_progressbar_thumb</item>
+        <item name="android:thumbOffset">8dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+    </style>
+    <!--抽屉里面button的style-->
+    <style name="drawer_button_style">
+        <item name="android:background">#fff</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+    <!--抽屉里面textView的style-->
+    <style name="drawer_textView_style">
+        <item name="android:drawableRight">@mipmap/payeco_plugin_rightarr</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="AppTheme.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:drawableRight="@drawable/global_arrow_grey"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingLeft="10dp"-->
+    <style name="select_textView_style">
+        <item name="android:drawableRight">@drawable/global_arrow_grey</item>
+        <item name="android:background">#fff</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="custom_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#fff</item>
+        <item name="android:textColor">@drawable/text</item>
+    </style>
+
+
+</resources>

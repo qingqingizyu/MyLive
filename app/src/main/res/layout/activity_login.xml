@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#fff"
+    tools:context="com.zmm.activity.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/login_logo_new"/>
+
+    <RadioGroup
+        android:id="@+id/rdg_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_qq"
+            style="@style/custom_style"
+            android:checked="true"
+            android:onClick="qqLogin"
+            android:drawableTop="@drawable/rb_qqlogin_selector"
+            android:text="QQ登录" />
+
+        <RadioButton
+            android:id="@+id/rb_phone"
+            style="@style/custom_style"
+            android:onClick="phoneLogin"
+            android:drawableTop="@drawable/rb_phonelogin_selector"
+            android:text="手机登录" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

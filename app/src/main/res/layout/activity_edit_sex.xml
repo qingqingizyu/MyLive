@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_sex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.zmm.activity.popup.select.edit.EditSexActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_sex_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00D8C9">
+        <!--取消功能-->
+        <TextView
+            android:id="@+id/et_sex_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="#fbfbfb"
+            android:textSize="16sp" />
+        <!--标题并且居中-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="性别"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <!--男-->
+        <RadioButton
+            android:id="@+id/et_sex_male"
+            android:drawableTop="@drawable/et_sex_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="男"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/et_sex_male_color"
+            android:layout_gravity="center"/>
+        <!--女-->
+        <RadioButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_sex_female"
+            android:drawableTop="@drawable/et_sex_female"
+            android:layout_width="wrap_content"
+            android:text="女"
+            android:button="@null"
+            android:background="#fff"
+            android:gravity="center"
+            android:textColor="@drawable/et_sex_female_color"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </RadioGroup>
+</LinearLayout>

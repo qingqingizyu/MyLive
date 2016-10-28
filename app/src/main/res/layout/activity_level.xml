@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_level"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.zmm.activity.popup.LevelActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/level_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00D8C9"
+        app:navigationIcon="@drawable/chat_back">
+        <!--标题并且居中-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="等级"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/level_pic" />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_sign"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context="com.zmm.activity.popup.select.edit.EditSignActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_sign_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00D8C9">
+        <!--取消功能-->
+        <TextView
+            android:id="@+id/et_sign_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#fbfbfb"
+            android:text="取消"/>
+        <!--标题并且居中-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="个性签名"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/et_sign_tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:textColor="#fbfbfb"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:text="保存"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/et_et_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@+id/edit_sign_bar"
+        android:hint="输入你的个性签名"
+        android:padding="15dp" />
+</RelativeLayout>
